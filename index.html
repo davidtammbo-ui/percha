@@ -1,1 +1,34 @@
-<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#0e0f12"><link rel="manifest" href="manifest.json"><link rel="stylesheet" href="style.css"><title>Percha</title></head><body><header id="top"><h1 id="title">Inicio</h1></header><main id="view"></main><nav id="nav"><button data-v="home">Inicio</button><button data-v="closet">Armario</button><button data-v="add" class="plus">+</button><button data-v="outfits">Conjuntos</button><button data-v="stats">Más</button></nav><div id="modal" hidden></div><script src="app.js"></script></body></html>
+<!doctype html>
+<html lang="es" data-theme="noche">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0f1014">
+<meta name="color-scheme" content="dark light">
+<meta name="description" content="Percha: tu armario, tus deseos y tus conjuntos en el bolsillo.">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Percha">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon.svg">
+<script>try{var t=localStorage.perchaTema,c={noche:'#0f1014',marfil:'#f6f1e9',bosque:'#0d1813',coral:'#fff3f0'};if(c[t]){document.documentElement.setAttribute('data-theme',t);document.querySelector('meta[name=theme-color]').content=c[t]}}catch(e){}</script>
+<link rel="stylesheet" href="style.css">
+<title>Percha</title>
+</head>
+<body>
+<header id="top"><button id="back" class="iconbtn" type="button" aria-label="Volver" hidden></button><div class="ht"><p id="kicker" hidden></p><h1 id="title">Inicio</h1></div></header>
+<main id="view"></main>
+<div id="dock" hidden></div>
+<nav id="nav" aria-label="Navegación principal">
+<button type="button" data-v="home" data-i="home"><span>Inicio</span></button>
+<button type="button" data-v="closet" data-i="closet"><span>Armario</span></button>
+<button type="button" data-v="add" data-i="plus" class="plus" aria-label="Añadir prenda"></button>
+<button type="button" data-v="outfits" data-i="outfits"><span>Conjuntos</span></button>
+<button type="button" data-v="settings" data-i="settings"><span>Ajustes</span></button>
+</nav>
+<div id="modal" hidden></div>
+<div id="toast" role="status" aria-live="polite"></div>
+<script src="app.js"></script>
+</body>
+</html>

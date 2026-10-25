@@ -1,1 +1,20 @@
-{"name":"Percha","short_name":"Percha","start_url":".","display":"standalone","background_color":"#0e0f12","theme_color":"#0e0f12","icons":[{"src":"icon.svg","sizes":"any","type":"image/svg+xml"}]}
+{
+  "name": "Percha",
+  "short_name": "Percha",
+  "description": "Organiza tu ropa, tus deseos y tus conjuntos.",
+  "lang": "es",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0f1014",
+  "theme_color": "#0f1014",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
